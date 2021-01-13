@@ -30,13 +30,13 @@ $ cut -d "," -f 4,84 scorecard.csv | sed '1d'
 ### Part E
 
 ```shell
-$ cut -d "," -f 4,84 scorecard.csv | sed '1d' | sort -nrt ',' -k 2,2 | head -n 10
+$ cut -d "," -f 4,84 scorecard.csv | sed '1d' | sort -nrt ',' -k 2 | head -n 10
 ```
 
 ### Part F
 
 ```shell
-$ cut -d "," -f 4,84 scorecard.csv | sed '1d' | sort -nrt ',' -k 2,2 | head -n 10 | sed -e 's/^/|/' -e 's/,/|/' -e 's/$/|/'
+$ cut -d "," -f 4,84 scorecard.csv | sed '1d' | sort -nrt ',' -k 2 | head -n 10 | sed -e 's/^/|/' -e 's/,/|/' -e 's/$/|/'
 ```
 **Table:**
 
